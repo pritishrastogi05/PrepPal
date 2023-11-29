@@ -1,0 +1,42 @@
+Planning the whole app functionalities-
+1. Select grade
+2.Select Subject
+3. Select from the categories given:
+    a. Sylabus enquiry(Can be added later on when integrated with chromadb and wikipedia to get latest updates)
+    b. Questions(Seperate prompt templates each for topic, subtopic and numericals in subjects of physics,Maths and Chemistry)
+    c. Explainer: A detailed explainer chained to the question template linked to wikipedia.
+    d. Memory : Subject-wise integrated memory so that it csn be used to create personalized assessment systems
+    e. Progress : Build a seperate template to check the assessment and a seperate memnory to record and assess progress
+4. For each class there has to be a seperate PDFReader class with an accumulative material segregated subject-wise,
+   and linked to the seperate templatess designed for each subject
+
+BROAD HIERARCHY/STRUCTURE-
+1. Class (Selected Statically)
+2. Subject (Selected Statically)
+3. Chapter (Through a custom LLM template which would be decided by the Class and the Subject Entries)
+4. Subtopics (Auto-generated through a prompt template defined by the chapter field)
+*So, chapter template and Subtopics template has to be linked through a SimpleSequential Chain
+------------------------------PSEUDO CODE BEGINS----------------------------------------------------------------------------
+
+
+
+We can think of biding all these functionalities into one class, that could be re-used all together
+
+A class method to set up all the static parameters, and the other one that would inherit the responses and actually
+run the SimpleSequentialChain
+
+class define_static_parameters:
+
+define the basic static parameters in the global scope and then define them within the class--> It enables us to easily access them in the other classes
+As, class distribution makes the code more neat and clean.:)
+
+    def __init__(grade,subject):
+        #Define all 2 static criterias here to be used in the other classes
+
+    def load_animation():
+        #Load necessary animations for the landing page from lottie files
+
+    def landing_page(self):
+        #Integrate the values in a streamlit landing page
+
+class
