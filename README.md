@@ -1,7 +1,11 @@
 # PrepPal
+Project goal
+In developing countries where education is highly valued to uplift one's economic status and opportunities. Private institutions have centralized learning depriving those economically weak of assistance they require to excel.
+Not everyone can have access to good tuition centers, coaching or teachers.
+With the advent of generative AI - I decided to build a solution for the student community
 
-<p>
-<h3> A LLM powered study tool for students</h3><br>
-  PrepPal is designed to tackle the need of peronalized study materials and explainers for all students.
-  It uses the OpenAI API and Langchain and is able to answer questions based on the sylabus of CBSE, India as the LLM is trained on the NCERT Materials.
-</p>
+
+PrepPal - a LLM powered solution that uses ChromaDB, WikiPedia and langchain to generate question papers, topic explainers, planners and also assignments for any subject and topic from classes 10-12.
+Currently under development - it would also host the functionality of PDF- content assessment and memory to personalize the experience of each child and further optimize their preparation.
+
+<a href='https://youtu.be/fWhlq-4S9jM'>Video</a>
